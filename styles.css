@@ -1,0 +1,225 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: rgb(66,53,186);
+    background: linear-gradient(0deg, rgba(66,53,186,1) 6%, rgba(240,45,253,1) 93%); */
+    background-color: #3A4D39;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+
+}
+
+.main_body{
+    padding: 20px;
+    border: none;
+    width: 600px;
+    justify-content: space-around;
+    margin: 0 auto;
+    position: relative;
+    top: 40px;
+    border-radius: 5px;
+    background: #9BB8CD;
+    box-shadow: rgba(248, 246, 246, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+
+ }
+
+header {
+    font-size: 20px;
+    font-family: calibri;
+    text-align: left;
+    gap: 30px;
+}
+header .nvar_header-left{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+header .nvar_header-left i{
+    font-size: 40px;
+    cursor: pointer;
+}
+header .nvar_header-right ul{
+    display: flex;
+}
+header .nvar_header-right ul li{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    list-style: none;
+    cursor: pointer;
+}
+header .nvar_header-right ul li:hover{
+    margin-top: -10px;
+    border-bottom: 2px solid;
+    transition: 0.4s ease-in;
+    
+}
+
+
+
+
+header, 
+form {
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form input {
+    padding: 0.5rem;
+    padding-left: 1.5rem;
+    font-size: 1.6rem;
+    border-right: 4px solid #EEC759!important;
+    border: none;
+    color: #ffffff;
+    background-color: #C499F3;
+    border-radius: 0rem;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+form button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    border: none;
+    color: #ffffff;
+    background-color: #2D3250;
+    border-radius: 5%;
+    box-shadow: rgba(29, 26, 26, 0.24) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+
+form button {
+    color: #F6B17A;
+    background: white;
+    cursor: pointer;
+    transition: all 0.3 ease;
+    margin-left: 0.5rem; 
+}
+
+form button:hover {
+    color: white;
+    background: #F6B17A;
+    transition: 0.8s;
+}
+
+.fa-plus-circle {
+    margin-top: 0.3rem;
+    margin-left: -8px;
+}
+
+.todo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-list {
+    min-width: 30%;
+    list-style: none;
+}
+
+.todo {
+    margin: 0.5rem;
+    padding-left: 0.5rem;
+    background: white;
+    color: black;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    border-left: 5px solid #EEC759;
+}
+
+.todo li {
+    flex: 1;
+    
+}
+
+.trash-btn, 
+.complete-btn {
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    
+}
+
+.complete-btn {
+    background: rgb(255, 200, 0);
+}
+
+.trash-btn {
+    /* border-top-right-radius: 1.75rem;
+    border-bottom-right-radius: 1.75rem; */
+    background: rgb(171, 171, 171);
+}
+
+.todo-item {
+    padding: 0rem 0.5rem;
+}
+
+.fa-trash, 
+.fa-check-circle {
+    pointer-events: none;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
+
+.slide {
+    transform: translateX(10rem);
+    opacity: 0;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+}
+
+.select {
+    margin: 1rem;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+select {
+    color:rgb(255, 200, 0);
+    width: 10rem;
+    height: 3.2rem;
+    cursor: pointer;
+    padding: 1rem;
+}
+
+.select::after {
+    content: "\25BC";
+    position: absolute;
+    background:rgb(255, 200, 0);
+    top: 0;
+    right: 0;
+    padding: 1rem;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.select::hover::after {
+    background: white;
+    color: rgb(255, 200, 0);
+}
